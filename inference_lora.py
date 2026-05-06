@@ -25,7 +25,7 @@ tokenizer = AutoTokenizer.from_pretrained("./Qwen/Qwen3-4B", use_fast=False, tru
 model = AutoModelForCausalLM.from_pretrained("./Qwen/Qwen3-4B", device_map="auto", torch_dtype=torch.bfloat16)
 
 # 加载lora模型
-model = PeftModel.from_pretrained(model, model_id="./output/Qwen3-4B/checkpoint-1082")
+model = PeftModel.from_pretrained(model, model_id="./output/Qwen3-4B")
 
 test_texts = {
     'instruction': "你是一个医学专家，你需要根据用户的问题，给出带有思考的回答。",
