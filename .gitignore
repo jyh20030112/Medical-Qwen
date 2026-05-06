@@ -1,0 +1,7 @@
+Qwen/Qwen1.5-1.8B-Chat/
+swanlabtest.py
+test.py
+__pycache__/
+*.pyc
+swanlog/
+output/
